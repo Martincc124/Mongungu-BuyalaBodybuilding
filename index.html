@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moonwalk Manor - Your Haven in Space</title>
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="style-main.css" type="text/css" media="all" />
+
+    <script src="JS/script.js" defer></script>
+    <script src="JS/libs/flexibility.js"></script>
+    <script>
+      /*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+      !(function() {
+        function e(e, n, t) {
+          "use strict";
+          var o = window.document.createElement("link"),
+            r = n || window.document.getElementsByTagName("script")[0],
+            a = window.document.styleSheets;
+          return (
+            (o.rel = "stylesheet"),
+            (o.href = e),
+            (o.media = "only x"),
+            r.parentNode.insertBefore(o, r),
+            (o.onloadcssdefined = function(e) {
+              for (var n, t = 0; t < a.length; t++)
+                a[t].href && a[t].href === o.href && (n = !0);
+              n
+                ? e()
+                : setTimeout(function() {
+                    o.onloadcssdefined(e);
+                  });
+            }),
+            o.onloadcssdefined(function() {
+              o.media = t || "all";
+            }),
+            o
+          );
+        }
+        function n(e, n) {
+          (e.onload = function() {
+            (e.onload = null), n && n.call(e);
+          }),
+            "isApplicationInstalled" in navigator &&
+              "onloadcssdefined" in e &&
+              e.onloadcssdefined(n);
+        }
+        !(function(t) {
+          var o = function(r, a) {
+            "use strict";
+            if (r && 3 === r.length) {
+              var i = t.navigator,
+                c = t.document,
+                s = t.Image,
+                d = !(
+                  !c.createElementNS ||
+                  !c.createElementNS("http://www.w3.org/2000/svg", "svg")
+                    .createSVGRect ||
+                  !c.implementation.hasFeature(
+                    "http://www.w3.org/TR/SVG11/feature#Image",
+                    "1.1"
+                  ) ||
+                  (t.opera && -1 === i.userAgent.indexOf("Chrome")) ||
+                  -1 !== i.userAgent.indexOf("Series40")
+                ),
+                l = new s();
+              (l.onerror = function() {
+                (o.method = "png"), (o.href = r[2]), e(r[2]);
+              }),
+                (l.onload = function() {
+                  var t = 1 === l.width && 1 === l.height,
+                    i = r[t && d ? 0 : t ? 1 : 2];
+                  t && d
+                    ? (o.method = "svg")
+                    : t
+                    ? (o.method = "datapng")
+                    : (o.method = "png"),
+                    (o.href = i),
+                    n(e(i), a);
+                }),
+                (l.src =
+                  "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="),
+                (c.documentElement.className += " grunticon");
+            }
+          };
+          (o.loadCSS = e), (o.onloadCSS = n), (t.grunticon = o);
+        })(this),
+          (function(e, n) {
+            "use strict";
+            var t = n.document,
+              o = "grunticon:",
+              r = function(e) {
+                if (
+                  t.attachEvent
+                    ? "complete" === t.readyState
+                    : "loading" !== t.readyState
+                )
+                  e();
+                else {
+                  var n = !1;
+                  t.addEventListener(
+                    "readystatechange",
+                    function() {
+                      n || ((n = !0), e());
+                    },
+                    !1
+                  );
+                }
+              },
+              a = function(e) {
+                return n.document.querySelector('link[href$="' + e + '"]');
+              },
+              i = function(e) {
+                var n,
+                  t,
+                  r,
+                  a,
+                  i,
+                  c,
+                  s = {};
+                if (((n = e.sheet), !n)) return s;
+                t = n.cssRules ? n.cssRules : n.rules;
+                for (var d = 0; d < t.length; d++)
+                  (r = t[d].cssText),
+                    (a = o + t[d].selectorText),
+                    (i = r.split(");")[0].match(/US\-ASCII\,([^"']+)/)),
+                    i && i[1] && ((c = decodeURIComponent(i[1])), (s[a] = c));
+                return s;
+              },
+              c = function(e) {
+                var n, r, a, i;
+                a = "data-grunticon-embed";
+                for (var c in e) {
+                  i = c.slice(o.length);
+                  try {
+                    n = t.querySelectorAll(i);
+                  } catch (s) {
+                    continue;
+                  }
+                  r = [];
+                  for (var d = 0; d < n.length; d++)
+                    null !== n[d].getAttribute(a) && r.push(n[d]);
+                  if (r.length)
+                    for (d = 0; d < r.length; d++)
+                      (r[d].innerHTML = e[c]),
+                        (r[d].style.backgroundImage = "none"),
+                        r[d].removeAttribute(a);
+                }
+                return r;
+              },
+              s = function(n) {
+                "svg" === e.method &&
+                  r(function() {
+                    c(i(a(e.href))), "function" == typeof n && n();
+                  });
+              };
+            (e.embedIcons = c),
+              (e.getCSS = a),
+              (e.getIcons = i),
+              (e.ready = r),
+              (e.svgLoadedCallback = s),
+              (e.embedSVG = s);
+          })(grunticon, this);
+      })();
+      grunticon(
+        [
+          "gfx/icons.data.svg.css",
+          "gfx/icons.data.png.css",
+          "gfx/icons.fallback.css"
+        ],
+        grunticon.svgLoadedCallback
+      );
+    </script>
+    <noscript><link href="gfx/icons.fallback.css" rel="stylesheet"/></noscript>
+  </head>
+
+  <body>
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header class="masthead clear">
+      <div class="site-header centered">
+        <div class="site-branding">
+          <h1 class="site-title">
+            <a href="/"
+              ><span class="icon-mmlogo" data-grunticon-embed></span>Mongungu &
+              Buyala bodybuilding</a
+            >
+          </h1>
+        </div>
+        <!-- .site-title -->
+        <nav id="multi-level-nav" class="menu multi-level-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a class="reserve" href="#">Start your transformation!</a></li>
+          </ul>
+        </nav>
+        <!-- #multi-level-nav .multi-level-nav -->
+      </div>
+      <!-- .centered -->
+    </header>
+    <!-- .masthead -->
+
+    <div id="showcase" class="promo-area">
+      <div class="front-slider flexslider">
+        <ul class="slides">
+          <li>
+            <img
+              src="images/mainpromo/welcome01-800.jpg"
+              alt=""
+              data-type="showcase"
+            />
+          </li>
+          <li>
+            <img
+              src="images/mainpromo/welcome02-800.jpg"
+              alt=""
+              data-type="showcase"
+            />
+          </li>
+          <li>
+            <img
+              src="images/mainpromo/welcome03-800.jpg"
+              alt=""
+              data-type="showcase"
+            />
+          </li>
+          <li>
+            <img
+              src="images/mainpromo/welcome04-800.jpg"
+              alt=""
+              data-type="showcase"
+            />
+          </li>
+        </ul>
+      </div>
+      <!-- .flexslider -->
+      <div class="promo-content">
+        <div class="promo-text">
+          <h2 class="promo-title">Insane tranformations</h2>
+          <p class="promo-lede">
+            Take a look at our experience in bodybuilding and
+            bodytransformations!
+          </p>
+        </div>
+        <!-- .promo-text -->
+      </div>
+      <!-- .promo-content -->
+    </div>
+    <!-- #showcase .promo-area -->
+
+    <main class="main-area">
+      <h2 class="main-title">Tales from the Moon</h2>
+      <section class="stories centered">
+        <!-- slider -->
+        <div class="story-slider flexslider">
+          <ul class="slides">
+            <li>
+              <figure class="story-wrapper">
+                <img
+                  src="images/testimonials/bluepebble-800.jpg"
+                  alt=""
+                  data-type="story"
+                />
+                <figcaption class="story">
+                  <h3 class="story-header">Tale of Monungu</h3>
+                  <div class="author">Simon Voldsgaard</div>
+                  <p>
+                    This is the story of our very own Simon Voldsgaard who went
+                    through one of the biggest transformations we've ever seen
+                    on this planet! And he totally didnt take steroids!
+                  </p>
+                  <a href="#" class="content-button">Get the whole story</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="story-wrapper">
+                <img
+                  src="images/testimonials/earth-800.jpg"
+                  alt=""
+                  data-type="story"
+                />
+                <figcaption class="story">
+                  <h3 class="story-header">Tale of the great Buyala</h3>
+                  <div class="author">Martin Cevik</div>
+                  <p>
+                    Buyala was fat, Buyala was useless. Then he decided to make
+                    a body transformation with his friend and co-owner of this
+                    website Mongungu, and went through a body transformation
+                    that has gone down in history.
+                  </p>
+                  <a href="#" class="content-button">Get the whole story</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="story-wrapper">
+                <img
+                  src="images/testimonials/footprint-800.jpg"
+                  alt=""
+                  data-type="story"
+                />
+                <figcaption class="story">
+                  <h3 class="story-header">Fat earl</h3>
+                  <div class="author">Maiken Endersen</div>
+                  <p>
+                    Story of our client fat earl.
+                  </p>
+                  <a href="#" class="content-button">Get the whole story</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="story-wrapper">
+                <img
+                  src="images/testimonials/zerog-800.jpg"
+                  alt=""
+                  data-type="story"
+                />
+                <figcaption class="story">
+                  <h3 class="story-header">Kinøjser Ken</h3>
+                  <div class="author">Kenneth Vip Æg</div>
+                  <p>
+                    Story of our client Kinøjser ken who struggled to gain
+                    muscle mass in his quest for massiveness.
+                  </p>
+                  <a href="#" class="content-button">Get the whole story</a>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <!-- .story-slider -->
+      </section>
+      <!-- .stories centered -->
+    </main>
+    <!-- .main-area -->
+
+    <footer class="footer">
+      <section class="footer-widgets centered">
+        <div class="widget footer-menu">
+          <h4 class="widget-title">Find your way</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">programs</a></li>
+            <li><a href="#">Supplements</a></li>
+            <li><a href="#">M&BShop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <!-- .widget -->
+        <div class="widget footer-cta">
+          <h4 class="widget-title">Buy our program now!</h4>
+          <p>What are you waiting for? build your dream body today!</p>
+          <a href="#">Buy now!</a>
+        </div>
+        <!-- .widget -->
+        <div class="widget footer-address">
+          <address>
+            <h4 class="widget-title">Mongungu & Buyala bodybuilding</h4>
+            <p>
+              1 Bodybuilding Avenue<br />
+              Shred, Bodytown<br />
+              Massivecity
+            </p>
+          </address>
+        </div>
+        <!-- .widget -->
+      </section>
+      <!-- .footer-widgets -->
+      <nav class="social-nav" role="navigation">
+        <ul>
+          <li>
+            <a
+              class="icon-linkedin"
+              data-grunticon-embed
+              href="https://linkedin.com"
+              ><span class="screen-reader-text">LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="icon-twitter"
+              data-grunticon-embed
+              href="https://twitter.com"
+              ><span class="screen-reader-text">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="icon-facebook"
+              data-grunticon-embed
+              href="https://facebook.com"
+              ><span class="screen-reader-text">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="icon-instagram"
+              data-grunticon-embed
+              href="https://instagram.com"
+              ><span class="screen-reader-text">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="icon-youtube"
+              data-grunticon-embed
+              href="https://youtube.com"
+              ><span class="screen-reader-text">YouTube</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- .social-nav -->
+    </footer>
+    <!-- .footer -->
+
+    <script src="JS/libs/jquery-2.1.3.min.js"></script>
+    <script src="JS/libs/jquery.flexslider-min.js"></script>
+    <script src="JS/menu-toggle.js"></script>
+    <script src="JS/flexslider.js"></script>
+  </body>
+</html>
